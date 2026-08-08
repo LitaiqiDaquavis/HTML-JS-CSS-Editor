@@ -201,7 +201,19 @@ body.drawer-open .app-shell { width: calc(100% - var(--drawer-width)); margin-le
 .confirm-modal p { margin-top: 12px; color: #bbb; line-height: 1.65; }
 .confirm-modal .modal-actions { justify-content: center; }
 
-.toast { position: fixed; z-index: 50; right: 18px; bottom: 18px; max-width: min(360px, calc(100vw - 36px)); padding: 11px 14px; border: 1px solid var(--line); border-radius: 6px; color: #191300; background: var(--yellow); box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45); font-size: 13px; font-weight: 700; }
+.toast { position: fixed; z-index: 50; right: 18px; bottom: 18px; max-width: min(360px, calc(100vw - 36px)); padding: 11px 14px; border: 1px solid var(--line); border-radius: 6px; color: #191300; background: var(--yellow); box-shadow: 0 14px 35px rgba(0, 0, 0, 0.45); font-size: 13px; font-weight: 700; will-change: transform, opacity; }
+.toast.entering { animation: toast-in 320ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.toast.leaving { pointer-events: none; animation: toast-out 200ms cubic-bezier(0.4, 0, 1, 1) both; }
+
+@keyframes toast-in {
+    from { opacity: 0; transform: translate3d(calc(100% + 24px), 0, 0); }
+    to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes toast-out {
+    from { opacity: 1; transform: translate3d(0, 0, 0); }
+    to { opacity: 0; transform: translate3d(calc(100% + 24px), 0, 0); }
+}
 
 @media (max-width: 820px) {
     body { overflow: auto; }
@@ -219,5 +231,5 @@ body.drawer-open .app-shell { width: calc(100% - var(--drawer-width)); margin-le
 }
 
 @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
