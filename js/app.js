@@ -78,7 +78,17 @@ function showToast(message) {
     clearTimeout(state.toastTimer);
     elements.toast.textContent = message;
     elements.toast.hidden = false;
-    state.toastTimer = setTimeout(() => { elements.toast.hidden = true; }, 2600);
+    elements.toast.classList.remove("entering", "leaving");
+    void elements.toast.offsetWidth;
+    elements.toast.classList.add("entering");
+    state.toastTimer = setTimeout(() => {
+        elements.toast.classList.remove("entering");
+        elements.toast.classList.add("leaving");
+        state.toastTimer = setTimeout(() => {
+            elements.toast.hidden = true;
+            elements.toast.classList.remove("leaving");
+        }, 200);
+    }, 2400);
 }
 
 function setDirty(dirty) {
