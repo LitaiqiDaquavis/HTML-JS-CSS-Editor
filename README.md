@@ -21,3 +21,7 @@ However, just for those 3 type of files, no more.
 There is a menu button in the upper left corner. Clicking it allows you to choose how to edit and manage your files
 
 Such as editing or uploading.
+
+## The End
+
+Thanks for reading, I thing this thing is not very great, Thanks for your issues!
