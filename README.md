@@ -5,16 +5,16 @@
 
 ⚠️**JUST 5MB!**
 
-⚠️**PLEASE DO NOT UPLOAD YOUR VIDIOS!**
+⚠️**PLEASE DO NOT UPLOAD YOUR VIDEOS!**
 
 ⚠️**CHECK YOUR FILES SIZE!**
 
 ## What's This
-This is a website for edit your own website. `Use a website to edit a website` is funny yeah?
+This is a website for editing your own website. `Use a website to edit a website` is funny yeah?
 
 Getting back to the main topic, This thing is designed for editing your own website; it can edit CSS, Javascript, and HTML.
 
-However, just for those 3 type of files, no more.
+However, just for those 3 types of files, no more.
 
 ## What's in this thing
 
@@ -24,4 +24,4 @@ Such as editing or uploading.
 
 ## The End
 
-Thanks for reading, I thing this thing is not very great, Thanks for your issues!
+Thanks for reading, I think this thing is not very great, Thanks for your issues!
