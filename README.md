@@ -10,7 +10,7 @@
 ⚠️**CHECK YOUR FILES SIZE!**
 
 ## What's This
-This is a website for editing your own website. `Use a website to edit a website` is funny yeah?
+This is a website for editing your own website. "Use a website to edit a website" is funny yeah?
 
 Getting back to the main topic, This thing is designed for editing your own website; it can edit CSS, Javascript, and HTML.
 
